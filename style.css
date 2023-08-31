@@ -1,0 +1,38 @@
+body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: azure;
+ }
+ 
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 960px;
+     margin-top: 20px;
+ }
+ 
+ .square {
+     width: calc(100% / 16);
+     height: calc(100% / 16);
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     transition: background-color 0.3s;
+ }
+ 
+ .square:hover {
+     background-color: rgba(0, 0, 0, 0.1);
+ }
+
+ #reset {
+     padding: 1rem 2rem;
+     font-size: 1rem;
+     font-weight: bold;
+     border: none;
+     border-radius: 1rem;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
